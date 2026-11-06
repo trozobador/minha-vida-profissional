@@ -34,9 +34,9 @@ aux_links_new_tab: true
 autor:
   nome: Ricardo Martins
   github: "https://github.com/trozobador"
-  linkedin: "https://www.linkedin.com/in/SEU-USUARIO"   # TODO: confirmar
-  x: "https://x.com/SEU-USUARIO"                         # TODO: confirmar
-  instagram: "https://www.instagram.com/SEU-USUARIO"     # TODO: confirmar
+  linkedin: "https://www.linkedin.com/in/costaricardomartins/"
+  x: "https://x.com/ricardoparallax"
+  instagram: "https://www.instagram.com/trozobador/"
 
 callouts:
   dica:
