@@ -132,6 +132,8 @@ No final, diga quantas vagas analisou no total e quais 3 você recomenda prioriz
 
 Com a lista em mãos, escolha as vagas mais promissoras e use o prompt de [Análise de currículo × vaga]({% link procurar-emprego/analise-de-curriculo.md %}) para avaliar cada uma em detalhe antes de se candidatar. Você pode pedir na mesma conversa: *"Faça a análise detalhada das vagas 2, 5 e 7."*
 
+Quer ir além? A busca e a triagem são as etapas 2 e 3 do [método completo]({% link procurar-emprego/metodo-completo.md %}), que continua com currículo sob medida, preparação para entrevista e acompanhamento das candidaturas.
+
 ## Dicas
 
 {: .dica }

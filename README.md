@@ -13,7 +13,7 @@ Prompts prontos e guias simples para usar inteligência artificial (IA) a seu fa
 ## O que tem aqui
 
 - **Primeiros passos com IA**: qual IA usar, como colar um prompt e anexar arquivos, e os cuidados que você deve ter.
-- **Procurar emprego**: análise de currículo × vaga e automação da busca de vagas com um agente de IA.
+- **Procurar emprego**: análise de currículo × vaga, automação da busca de vagas com um agente de IA e o método completo em 10 etapas, documentado no repositório [meu-emprego-novo](https://github.com/R238Company/meu-emprego-novo).
 - **Desenvolver habilidades**: como usar a IA para aprender com autonomia (em breve).
 
 ## Por que este projeto existe

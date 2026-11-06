@@ -23,6 +23,7 @@ Nunca usou uma IA desse jeito? Comece por [Primeiros passos com IA]({% link prim
 
 - **[Primeiros passos com IA]({% link primeiros-passos/index.md %})**: qual IA usar, como colar um prompt e anexar arquivos, e os cuidados que você deve ter.
 - **[Procurar emprego]({% link procurar-emprego/index.md %})**: prompts para analisar seu currículo, se preparar para vagas e muito mais.
+- **[Método completo]({% link procurar-emprego/metodo-completo.md %})**: o passo a passo em 10 etapas que eu usei para me recolocar, documentado no repositório [meu-emprego-novo](https://github.com/R238Company/meu-emprego-novo).
 - **[Desenvolver habilidades]({% link desenvolver-habilidades/index.md %})**: como usar a IA para aprender com autonomia (em breve).
 
 ## Por que este site existe
