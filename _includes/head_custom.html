@@ -1,0 +1,26 @@
+{% if site.google_tag_id %}
+<script>
+  // Google Analytics só é carregado depois do consentimento (LGPD).
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+
+  window.mvpCarregarAnalytics = function () {
+    if (window.mvpAnalyticsCarregado) return;
+    window.mvpAnalyticsCarregado = true;
+    if (location.hostname !== "{{ site.google_tag_host }}") {
+      console.info("[analytics] consentimento ok, mas fora do site publicado: tag não carregada.");
+      return;
+    }
+    gtag('js', new Date());
+    gtag('config', '{{ site.google_tag_id }}');
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id={{ site.google_tag_id }}';
+    document.head.appendChild(s);
+  };
+
+  try {
+    if (localStorage.getItem('mvp-cookies') === 'aceito') window.mvpCarregarAnalytics();
+  } catch (e) {}
+</script>
+{% endif %}

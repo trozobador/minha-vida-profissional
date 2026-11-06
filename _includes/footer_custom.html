@@ -5,3 +5,42 @@
   <a href="{{ site.autor.x }}" target="_blank" rel="noopener">X</a> ·
   <a href="{{ site.autor.instagram }}" target="_blank" rel="noopener">Instagram</a>
 </p>
+{% if site.google_tag_id %}
+<p>
+  <a href="{{ '/privacidade.html' | relative_url }}">Privacidade</a> ·
+  <a href="#" onclick="mvpMostrarAvisoCookies(); return false;">Preferências de cookies</a>
+</p>
+
+<div id="aviso-cookies" class="aviso-cookies" role="region" aria-label="Aviso de cookies" hidden>
+  <p>
+    Usamos cookies do Google Analytics para contar visitas e saber quais páginas ajudam mais.
+    Não coletamos seu nome nem seus dados de contato.
+    <a href="{{ '/privacidade.html' | relative_url }}">Saiba mais</a>.
+  </p>
+  <div class="aviso-cookies-botoes">
+    <button type="button" class="btn" onclick="mvpEscolherCookies('recusado')">Recusar</button>
+    <button type="button" class="btn btn-primary" onclick="mvpEscolherCookies('aceito')">Aceitar</button>
+  </div>
+</div>
+
+<script>
+  function mvpMostrarAvisoCookies() {
+    document.getElementById('aviso-cookies').hidden = false;
+  }
+  function mvpEscolherCookies(escolha) {
+    try { localStorage.setItem('mvp-cookies', escolha); } catch (e) {}
+    document.getElementById('aviso-cookies').hidden = true;
+    if (escolha === 'aceito') {
+      window.mvpCarregarAnalytics();
+    } else if (window.mvpAnalyticsCarregado) {
+      // Já tinha aceitado antes: recarrega para parar a coleta.
+      location.reload();
+    }
+  }
+  (function () {
+    var escolha = null;
+    try { escolha = localStorage.getItem('mvp-cookies'); } catch (e) {}
+    if (!escolha) mvpMostrarAvisoCookies();
+  })();
+</script>
+{% endif %}

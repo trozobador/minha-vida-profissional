@@ -38,6 +38,10 @@ autor:
   x: "https://x.com/ricardoparallax"
   instagram: "https://www.instagram.com/trozobador/"
 
+# Google Analytics 4. Só carrega depois que a pessoa aceita os cookies.
+google_tag_id: G-D5TY6EEJZN
+google_tag_host: trozobador.github.io
+
 callouts:
   dica:
     title: Dica
