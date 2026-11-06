@@ -1,0 +1,63 @@
+title: Minha Vida Profissional
+description: Prompts e guias para usar IA na busca de emprego e no desenvolvimento profissional.
+lang: pt-BR
+baseurl: "/minha-vida-profissional"
+url: "https://trozobador.github.io"
+
+theme: just-the-docs
+
+color_scheme: light
+
+# Botão "Copiar" nos blocos de prompt
+enable_copy_code_button: true
+
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 2
+  preview_words_before: 5
+  preview_words_after: 10
+  button: false
+
+back_to_top: true
+back_to_top_text: "Voltar ao topo"
+
+heading_anchors: true
+
+# Links no topo da página
+aux_links:
+  "GitHub":
+    - "https://github.com/trozobador"
+aux_links_new_tab: true
+
+# Perfis do autor (usados no rodapé)
+autor:
+  nome: Ricardo Martins
+  github: "https://github.com/trozobador"
+  linkedin: "https://www.linkedin.com/in/SEU-USUARIO"   # TODO: confirmar
+  x: "https://x.com/SEU-USUARIO"                         # TODO: confirmar
+  instagram: "https://www.instagram.com/SEU-USUARIO"     # TODO: confirmar
+
+callouts:
+  dica:
+    title: Dica
+    color: green
+  atencao:
+    title: Atenção
+    color: yellow
+  importante:
+    title: Importante
+    color: red
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - vendor/

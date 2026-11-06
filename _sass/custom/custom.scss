@@ -1,0 +1,6 @@
+// Quebra as linhas longas dos prompts, para não precisar rolar para o lado (principalmente no celular).
+.prompt pre,
+.prompt code {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
